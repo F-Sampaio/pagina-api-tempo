@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+
+
+/* Navbar */
+nav div.nav-wrapper {
+    background-color:#3098D9;
+}
+
+footer.page-footer {
+    background-color: #3098D9;
+}
+
+nav div.nav-wrapper ul li:hover {
+    background-color: #0F7CBF;
+}
+
+footer.page-footer div.container a, p{
+    color: #ffffff;
+}
+
+footer.page-footer div.container a:hover{
+    color: #000000;
+}
