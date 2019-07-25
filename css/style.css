@@ -11,16 +11,56 @@ body {
 
 
 /* Navbar */
-nav div.nav-wrapper {
+nav {
     background-color:#3098D9;
 }
 
-footer.page-footer {
+nav div.nav-wrapper {
+  margin: auto;
+  width: 50%;
+}
+
+nav ul.left {
+  background-color: #3098D9;
+}
+
+nav ul.right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
     background-color: #3098D9;
 }
 
-nav div.nav-wrapper ul li:hover {
-    background-color: #0F7CBF;
+nav ul.right a {
+  background-color: transparent;
+  border: none; 
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none;
+  padding-bottom: 40px;
+}
+
+nav ul.right a:hover {
+  background-color: transparent;
+  border: none; 
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+
+
+/* Main */
+
+
+/* Footer */
+footer.page-footer {
+  background-color: #3098D9;
+}
+
+
+footer.page-footer div.footer-copyright {
+  background-color: #3098D9;  
 }
 
 footer.page-footer div.container a, p{

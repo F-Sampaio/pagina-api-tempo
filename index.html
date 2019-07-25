@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Compiled and minified Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Material Icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <!-- custom CSS -->
         <link rel="stylesheet" href="css/style.css">
             <!-- Compiled and minified MAterialize JavaScript -->
@@ -17,12 +19,35 @@
     <header>
             <nav>
                 <div class="nav-wrapper">
-                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <!-- <ul id="nav-mobile" class="left hide-on-med-and-down">
                         <li id="search-nav">
-                            <input  class="input-field" type="text" placeholder="City name" id="cityName"> 
+                            <div class="row">
+                                
+                            </div>
                         </li>
                         <li>
-                            <button class="btn waves-effect waves-light" type="submit" id="citySearch">Search</button>
+                            
+                        </li>
+                    </ul> -->
+                    <ul class="left">
+                            <li>
+                                <a>
+                                    <i class="hamburger material-icons hide-on-med-and-up">menu</i>
+                                </a>
+                            </li>
+                        </ul>
+                    <form action="" method="POST">
+                        <div class="input-field">
+                                <input  class="input-field" type="search" placeholder="City name" id="cityName"> 
+                                
+                                <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                    <ul class="right">
+                        <li>
+                            <a class = "btn-floating btn-large waves-effect" id="citySearch">
+                                <i class = "material-icons">search</i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +57,8 @@
 
 
     <main>
-
+        <div id="city"></div>
+        <div id="weather"></div>
     </main>
 
 
