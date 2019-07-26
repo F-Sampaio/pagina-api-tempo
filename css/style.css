@@ -1,3 +1,7 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* document */
 body {
     display: flex;
     min-height: 100vh;
@@ -43,16 +47,19 @@ nav ul.right a {
 nav ul.right a:hover {
   background-color: transparent;
   border: none; 
-  text-decoration: none;
-  box-shadow: none;
-  text-shadow: none;
+
 }
 
 
 
 /* Main */
-
-
+  main div.row div#card-weather {
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
 /* Footer */
 footer.page-footer {
   background-color: #3098D9;

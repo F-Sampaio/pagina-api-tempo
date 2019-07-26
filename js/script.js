@@ -12,15 +12,15 @@ citySearch.addEventListener('click', search);
     http.send();
 
     http.onreadystatechange = function() {
-        var weather = JSON.parse(http.responseText)
-        // console.log(weather);
-        document.getElementById('city').innerHTML = weather.name;
-        document.getElementById('weather').innerHTML = Math.round(parseFloat(weather.main.temp)) + ' °C';
+        var results = JSON.parse(http.responseText)
 
-        // console.log(`Cidade: ${weather.name}`)
-        // console.log(`Atual: ${Math.round(parseFloat(weather.main.temp))}`);
-
-        // console.log(http.responseText)
+        
+        document.getElementById('city').innerHTML = results.name;
+        document.getElementById('Currentweather').innerHTML = Math.round(parseFloat(results.main.temp)) + ' °C';
+        document.getElementById('description').innerHTML = results.weather[0].description;
+        document.getElementById('humidity').innerHTML = Math.round(parseFloat(results.main.humidity)) + '%';
+        document.getElementById('pressure').innerHTML = Math.round(parseInt(results.main.pressure)) + 'hPa';
+        document.getElementById('wind').innerHTML = Math.round(parseFloat(results.wind.speed)) + 'km/h';
     }
 
 }
