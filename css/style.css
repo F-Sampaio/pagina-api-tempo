@@ -60,6 +60,10 @@ nav ul.right a:hover {
     box-shadow: none;
     text-decoration: none;
   }
+
+  main div.row div#mainCard {
+    visibility: hidden;
+  }
 /* Footer */
 footer.page-footer {
   background-color: #3098D9;
