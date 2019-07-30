@@ -19,7 +19,13 @@ citySearch.addEventListener('click', search);
             document.getElementById('humidity').innerHTML = Math.round(parseFloat(results.main.humidity)) + '%';
             document.getElementById('pressure').innerHTML = Math.round(parseInt(results.main.pressure)) + 'hPa';
             document.getElementById('wind').innerHTML = Math.round(parseFloat(results.wind.speed)) + 'km/h';
+            var iconResults = `http://openweathermap.org/img/w/${results.weather[0].icon}.png`;
+            document.getElementById('imIcon').setAttribute('src', iconResults);
+
+
             mainCard.style.visibility = 'visible';
+            console.log(iconResults)
+            console.log(results.weather[0].icon);
         }
  
 }

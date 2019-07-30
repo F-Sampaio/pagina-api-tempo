@@ -63,6 +63,13 @@ nav ul.right a:hover {
 
   main div.row div#mainCard {
     visibility: hidden;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  main span {
+    align-content: center;
   }
 /* Footer */
 footer.page-footer {
