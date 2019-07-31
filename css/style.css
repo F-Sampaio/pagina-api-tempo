@@ -71,6 +71,10 @@ nav ul.right a:hover {
   main span {
     align-content: center;
   }
+
+  #city {
+    font-size: 100%;
+  }
 /* Footer */
 footer.page-footer {
   background-color: #3098D9;

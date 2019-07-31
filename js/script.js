@@ -35,11 +35,28 @@ citySearch.addEventListener('click', search);
 
         httpForecast.onreadystatechange = function() {
             var forecastResult = JSON.parse(httpForecast.responseText);
-            console.log(forecastResult);
+            // console.log(forecastResult.list.main[0]);
+
+            // for(var i = 0; i < forecastResult.list.length; i++){
+            //     console.log(forecastResult.list[i].main.temp);
+            // }
+
+            for (var i in forecastResult) {
+                for (var j in forecastResult.list) {
+                console.log(`Temp: ${forecastResult.list[j].main.temp}
+                            Time: ${forecastResult.list[j].dt_txt}`
+                )
+
+                }
+            }
+
+
+            
+
+            
+
+            
         }
 
-
-
- 
 }
 
