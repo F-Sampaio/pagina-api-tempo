@@ -1,5 +1,4 @@
 citySearch.addEventListener('click', search);
-var currentResult;
 
  function search(){
     //  Get the city
