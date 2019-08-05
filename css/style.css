@@ -68,6 +68,13 @@ nav ul.right a:hover {
     align-content: flex-start;
   }
 
+  main div.row ul#forecastCollapsible{
+    visibility: hidden;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
   main span {
     align-content: center;
   }
